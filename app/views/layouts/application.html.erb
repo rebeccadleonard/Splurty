@@ -9,6 +9,7 @@
 <body>
   <header>
   <div class="col-xs-3">
+    <%= link_to root_path, class: 'logo' do %>
       <div class="circle">
         <br />
         GET
@@ -17,7 +18,8 @@
         <br />
         CLIENT
       </div>
-    </div>
+    <% end %>
+  </div>
 
 
 
@@ -29,7 +31,7 @@
     Splurting out crazy things clients do since 2017
   </div>
   <div class="col-xs-5 links">
-    <%= link_to 'Contribute', '#' %>
+    <%= link_to 'Contribute', new_quote_path %>
     <%= link_to 'About', '#' %>
   </div>
   </header>
@@ -42,10 +44,10 @@
   <div class="footer">
     <div class="container">
       <div class="col-xs-6">
-        <%= link_to "This isn't enough, I need more", "#", class: 'next-quote' %>
+        <%= link_to "This isn't enough, I need more", root_path, class: 'next-quote' %>
       </div>
       <div class="col-xs-6 footer-blurb">
-      Proudly hacked in Wichita Falls, TX by <a href="http://thefirehoseproject.com">Rebecca</a><br />
+      Proudly hacked in Wichita Falls, TX by <a href="http://rebeccaleonard.getforge.io/">Rebecca</a><br />
       Want to build your own Splurty Web App - <a href="http://thefirehoseproject.com"> Learn how to code here</a>
       </div>
     </div>
